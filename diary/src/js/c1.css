@@ -1,0 +1,37 @@
+#body
+{
+	/*background-image: url(4.jpg);*/
+	/*background-color: #ccc;*/
+	/*background-color: #E3FDAC;*/
+	/*background-repeat: no-repeat;*/
+	/*background-size: 60% 2500%;*/
+	/*background-position: center;*/
+}
+.paper
+{
+	background-color: #E3FDAC;
+	/*background-repeat: no-repeat;*/
+	/*background-size: 60% 2500%;*/
+	/*border-style: 5px solid black;*/
+	/*background-position: center; */
+	border: 1px solid black;
+	width: 500px;
+	height: 700px;
+	margin: auto;
+}
+#d_img
+{
+	margin: left;
+	width: 100px;
+	height: 100px;
+	margin-left: 20px;
+	border: 1px solid black;
+}
+#d_text
+{
+	width: 450px;
+	height: 400px;
+	/*bottom: center;*/
+	border: 1px solid black;
+	margin: auto;
+}

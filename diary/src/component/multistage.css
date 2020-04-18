@@ -1,0 +1,23 @@
+.card-slider{
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+text-align: center;
+    /* &:after{ */
+        content: "";
+        display: block;
+        width: 100%;
+        height: 164px;
+        outline: 5px solid #61dafe;
+        position: absolute;
+        top: 50;
+        left: 40%;
+    /* } */
+}
+#h1_multi{
+    align-items: center;
+}
+#next #prex{
+    left: 40%;
+
+}

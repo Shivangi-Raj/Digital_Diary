@@ -1,0 +1,23 @@
+textarea:focus {
+    border-color: transparent !important;
+  }
+  
+  /* input:focus::-webkit-input-placeholder { color:transparent; }
+  input:focus:-moz-placeholder { color:transparent; }
+  input:focus::-moz-placeholder { color:transparent; }
+  input:focus:-ms-input-placeholder { color:transparent; } */
+  
+  textarea:focus::-webkit-input-placeholder { color:transparent; }
+  textarea:focus:-moz-placeholder { color:transparent; }
+  textarea:focus::-moz-placeholder { color:transparent; }
+  textarea:focus:-ms-input-placeholder { color:transparent; }
+  
+  /* input::-webkit-input-placeholder { color: #555555;}
+  input:-moz-placeholder { color: #555555;}
+  input::-moz-placeholder { color: #555555;}
+  input:-ms-input-placeholder { color: #555555;} */
+  
+  textarea::-webkit-input-placeholder { color: #555555;}
+  textarea:-moz-placeholder { color: #555555;}
+  textarea::-moz-placeholder { color: #555555;}
+  textarea:-ms-input-placeholder { color: #555555;}
