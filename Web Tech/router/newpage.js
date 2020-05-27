@@ -28,7 +28,7 @@ const upload=multer({
 router.post("/content",upload.single("image"),function(request,response){
     response.header("Access-Control-Allow-Origin","*");
     response.header("Access-Control-Allow-Headers");
-    // console.log(request.body.file);
+    console.log(request.file);
     // console.log(request.body.title);
     // console.log(request.body.flag)
     var content= new contentModel({
@@ -36,7 +36,7 @@ router.post("/content",upload.single("image"),function(request,response){
         title:request.body.title,
         details:request.body.details,
         mood:request.body.mood,
-        image:request.body.image
+        image:request.file.path
     });
     console.log(content.image)
     content.save()
@@ -48,5 +48,7 @@ router.post("/content",upload.single("image"),function(request,response){
     })
 
 })
+
+
 
 module.exports=router
