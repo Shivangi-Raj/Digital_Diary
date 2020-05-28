@@ -2,15 +2,16 @@
 {
   font-family: Arial, Helvetica, sans-serif;
   /*border: 1px solid black;*/
-  width: 660px;height: 400px;
+  width: 660px;height: 700px;
   margin: 0 auto;
-  margin-top: 30px;
+  /* margin-top: 20px; */
+  margin-left:350px;
   background-image: url('../images/12.jpg');
   background-position: center;
   background-size: cover;
-  /*position: fixed;*/
+  position: fixed;
   background-repeat: no-repeat;
-}
+}home.css
 h1
 {
   font-family: Arial, Helvetica, sans-serif;
@@ -20,6 +21,11 @@ h1
 /** {box-sizing: border-box}*/
 
 /* Full-width input fields */
+input{
+  height: 20px;
+  width: 300px;
+}
+
 input[type=text], input[type=password], input[type=email] {
   width: 600px;
   padding: 15px;
@@ -52,24 +58,28 @@ form
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 600px;
+  width: 300px;
   opacity: 0.9;
 }
 
 button:hover {
   opacity:1;
 }
-
 /* Extra styles for the cancel button */
-.logbtn {
+.slogin {
   padding: 14px 20px;
   background-color: #FF6699;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 300px;
+  opacity: 0.9;
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.logbtn, .signupbtn {
+.slogin, .signupbtn {
   float: left;
-  width: 50%;
+  /* width: 50%; */
 }
 
 /* Add padding to container elements */
@@ -87,7 +97,7 @@ button:hover {
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
-  .logbtn, .signupbtn {
-     width: 100%;
+  .slogin, .signupbtn {
+     /* width: 100%; */
   }
 }

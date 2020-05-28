@@ -8,6 +8,8 @@ import Newpage from "./newpage";
 import HttpService from "./httpService"
 import Title from "./title";
 import Multistage from "./multistage"
+import home from "./home.css";
+import About from "./about"
 
 const http = new HttpService();
 class Homee extends Component{
@@ -22,10 +24,13 @@ class Homee extends Component{
         this.changeToNewpage=this.changeToNewpage.bind(this);
         // http.getContents();
         this.loadContent=this.loadContent.bind(this);
+        this.changeToAbout=this.changeToAbout.bind(this);
+
         this.loadProductList=this.loadProductList.bind(this);
         this.happyStage=this.happyStage.bind(this);
         this.sadStage=this.sadStage.bind(this);
         this.nutralStage=this.nutralStage.bind(this);
+
 
 
         // this.showDetails=this.showDetails.bind(this);
@@ -54,7 +59,11 @@ class Homee extends Component{
       return(list)
 }
 
-
+changeToAbout(event){
+  this.setState({
+    flag:6
+  })
+}
 
     changeToHome(event){
       this.setState({
@@ -92,32 +101,21 @@ class Homee extends Component{
         if(this.state.flag==0){
           const {value}=this.state
             return(
-                <div id="nav">
+              
     
-          <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-        <Nav className="mr-auto">
-          <Nav.Link href="#" onClick={this.changeToHome}>Home</Nav.Link>
-          <Nav.Link to="#" onClick={this.changeToNewpage}>New Page</Nav.Link>
-          <Nav className="mr-auto">
-            {/* <select title="Memories" id="">
-              <option >Happy</option>
-              <option >Sad</option>
-              <option >Fear</option>
-              <option >Angry</option>
-
-            </select> */}
-          * <NavDropdown title="Memories" id="">
-            <NavDropdown.Item href="#">Happy</NavDropdown.Item>
-            {/*<NavDropdown.Item href="#">Sad</NavDropdown.Item>
-            <NavDropdown.Item href="#">Angry</NavDropdown.Item>
-            <NavDropdown.Divider />
-          <NavDropdown.Item href="#action/3.4">Fear</NavDropdown.Item>*/}
-          </NavDropdown>
-          </Nav>
-        </Nav>
-      </Navbar>
-      <br />
+                 <div id="nav">
+                    <div class="topnav">
+                    <a class="home_a" onClick={this.changeToHome} href="#">Home</a>
+                    <a class="new_a" to="#" onClick={this.changeToNewpage}>New</a>
+                    <a class="home_a" onClick={this.changeToAbout} href="#">About</a>
+                    <div id="div-search">
+                      {/* <Form inline>
+                        <FormControl type="text" placeholder="Enter the page you want to see;)" className="mr-sm-2" id="ip1" />
+                        <Button variant="outline-primary" id="s1">Search</Button>
+                      </Form> */}
+                    </div>
+                    </div>
+      <br /><br></br><br></br>
       <h1>HOME</h1>
       <button id="happy" value="happy" onClick={this.happyStage}>HAPPY</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <button id="sad" value="sad" onClick={this.sadStage}>SAD</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -144,6 +142,10 @@ class Homee extends Component{
                 {/* {this.state.flag} */}
                 </div>
 
+              )
+            }else{
+              return(
+                <About />
               )
             }
         

@@ -14,12 +14,13 @@
 {
 	text-align: center;
 	height: 71.5px;
-	color: black;
+	color:white;
 	margin: 0 0 -29px 0;
 	padding-top: 14px;
 	border-bottom: 2px solid black;
 	border-radius: 10px 10px 0 0;
 	font-size: 35px;
+	/* color: aliceblue; */
 }
 .parent{
 	/* position: absolute; */
@@ -114,6 +115,7 @@ padding: 10px 0;
 outline: none;
 margin-top: 20px;
 margin-left: 15%;
+height: 20px;
 }
 /* .submit:hover{
 background: linear-gradient(#FF1493 5%, #FF1493 100%);
@@ -181,6 +183,7 @@ font-size:25px;
 	width: 370px;
 	height: 40px;
 	background-image: url("../images/7.jpg");
+	color: white;
 	/* text- */
 	
 
