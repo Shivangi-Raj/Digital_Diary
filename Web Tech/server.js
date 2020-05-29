@@ -8,9 +8,8 @@ var parser=require("body-parser");
 // const gridFsStorage=require('multer-gridfs-storage');
 // const grid=require('gridfs-stream');
 // const methodOvveride=require('method-override');
-const connectDB = require("./DB/connection");
+const db = require("./DB/connection.js");
 
-connectDB();
 var signup=require("./router/signup");
 var login=require("./router/login");
 var home=require("./router/home")
@@ -68,6 +67,9 @@ app.get("/",function(request,response){
 
 // })
 
-app.listen(3001,function(){
-    console.log("running on port 3001");
+db()
+.then(() => {
+    app.listen(3001,function(){
+        console.log("running on port 3001");
+    })
 })
