@@ -2,7 +2,8 @@
 REQUIREMENT:
 i) ReactJS
 ii) NodeJS
-iii) Normal source-code Editor(VSCode used)
+iii)MOngoDB
+iv) Normal source-code Editor(VSCode used)
 
 HOW TO RUN THE PROJECT :::::::::::
 
